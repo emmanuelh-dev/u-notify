@@ -1,0 +1,6 @@
+Paleta de colores:
+
+ #fac645 (amarillo)
+ #044474 (azul)
+ #651965 (morado oscuro)
+ #a245a2 (morado lila)
