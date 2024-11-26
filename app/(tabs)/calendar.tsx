@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import MapView, { Marker } from 'react-native-maps';
 
 export default function MapScreen() {
   const events = [
@@ -52,21 +51,8 @@ export default function MapScreen() {
 
       {/* Map Section */}
       <View style={styles.mapContainer}>
-        <MapView
-          style={styles.map}
-          initialRegion={{
-            latitude: 25.7254,
-            longitude: 100.3134,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-          }}
-        >
-          <Marker
-            coordinate={{ latitude: 25.7254, longitude: 100.3134 }}
-            title="Event Location"
-            description="Current event location"
-          />
-        </MapView>
+      {/* Show an image instead of a map */}
+      <Image source={require('@/assets/images/Mapa1.png')} style={styles.map} />
       </View>
     </View>
   );
